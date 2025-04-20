@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragamonedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="casino-container">
+        <h1>🎰 Tragamonedas 🎰</h1>
+        <div class="slot-machine">
+            <div class="reels">
+                <div class="reel" id="reel1">🍒</div>
+                <div class="reel" id="reel2">🍋</div>
+                <div class="reel" id="reel3">🔔</div>
+            </div>
+        </div>
+        <button id="spinButton">Girar</button>
+        <button id="quitButton">Me retiro</button>
+        
+        <div id="phraseSelection" class="phrase-selection" style="display: none;">
+            <h3>Elige una frase:</h3>
+            <div id="phraseOptions"></div>
+        </div>
+        
+        <div id="gameOverScreen" class="game-over" style="display: none;">
+            <h2>Fin del juego</h2>
+            <p id="finalMessage"></p>
+            <div id="selectedPhrases"></div>
+            <button id="playAgainButton" class="play-again-button">Volver a jugar</button>
+        </div>
+        
+        <p id="message"></p>
+        <p id="balance">Fichas: <span id="coins">10</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
